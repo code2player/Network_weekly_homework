@@ -1,0 +1,12 @@
+[Unit]
+Description=test_1953072
+
+[Service]
+Type=forking
+ExecStart=/usr/sbin/stu/test_1953072 
+ExecReload=/bin/kill -15 $MAINPID ; /usr/sbin/stu/test_1953072 
+ExecStop=/bin/kill -15 $MAINPID
+StandardOutput=tty
+
+[Install]
+WantedBy=multi-user.target

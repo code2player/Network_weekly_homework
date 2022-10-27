@@ -1,0 +1,7 @@
+./test7 --fnum 1000 --size 1024 --ptime 2
+
+./test8-1 --fnum 1000 --pnum 100
+
+./test8-2 --fnum 1000 --pnum 100
+
+g++ -Wall -o test8-2 demo.cpp ../../common/mydaemon.c ../../common/parameter_process.cpp -static -L /usr/lib64/mysql -lmariadbclient -lssl -lcrypto -pthread -ldl -lz -I /usr/include/mysql

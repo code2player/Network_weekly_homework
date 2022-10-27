@@ -1,0 +1,7 @@
+#include<stdio.h>
+
+int main()
+{
+    printf("–§≈Ù∑…\n");
+    return 0;
+}

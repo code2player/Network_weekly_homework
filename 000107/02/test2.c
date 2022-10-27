@@ -1,0 +1,8 @@
+#include<stdio.h>
+int fun();
+int main()
+{
+	fun();
+	printf("–§≈Ù∑…\n");
+	return 0;
+}
